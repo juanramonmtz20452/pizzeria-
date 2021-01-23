@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Mega Pizzas</title>
+  <link rel="stylesheet" type="text/css" media="all" href="css.css" title="Normal">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="minerva.js"></script>
+
+<link  rel="icon"   href="pizzaf.png" type="image/png" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+            <a href="mainpage.html" class="rounded"> <img  src="pizzaf.png" width="50px" height="50px" > </a>
+      <a class="navbar-brand" href="mainpage.html">Mega Pizzas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="mainpage.html">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sucursales.html">Sucursales</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="especialidades.html">Especialidades</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5" style="color:white;">¡Las mejores pizzas las encuentras aqui!</h1>
+                <h1 class="mt-5" style="color:white;">Haz tu orden aqui</h1>
+        <h2 class="lead" style="color: white;">Coloca el cursor sobre la imagen para ver mas detalles.</h2>
+        <ul class="list-unstyled">
+
+        </ul>
+<table class="table">
+
+      <tr>
+        <td>
+<div class="card">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="hawaiana.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Hawaiana</h2>
+      <p>La pizza que unos cuestionan.</p>
+      <p>Pero todos aman.</p>
+      <p>Ingredientes:</p>
+      <p>Jamon y piña</p>
+    </div>
+  </div>
+</div>
+  <h2>Pizza hawaiana</h2>
+  <p class="price">Desde $99</p>
+  <p><button onclick="location.href='pedidos.php?pizza=Hawaiana&v=hawaiana.jpg&m=99&g=139&xg=169'">Ordena aqui</button></p>
+</div>
+
+        </td>
+         <td>
+<div class="card">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="peperonies.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Pepperoni Especial</h2>
+      <p>La combinacion perfecta entre Pepperoni.</p>
+      <p>y Champiñones.</p>
+      <p>Con un gran sabor y horneado.</p>
+      <p>Ingredientes:</p>
+      <p>Pepperoni,Champiñones,Extra queso.</p>
+    </div>
+  </div>
+</div>
+  <h2>Pepperoni Especial</h2>
+  <p class="price">Desde $79</p>
+  <p><button onclick="location.href='pedidos.php?pizza=Pepperoni Especial&v=peperonies.png&m=79&g=119&xg=159'">Ordena aqui</button></p>
+</div>
+
+         </td>
+           <td>
+<div class="card">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="carnesfrias123.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Carnes Frias.</h2>
+      <p>Para los amantes de la carne.</p>
+      <p>Ingredientes:</p>
+      <p>Pepperoni,Salami,Jamon.</p>
+    </div>
+  </div>
+</div>
+  <h2>Carnes Frias</h2>
+  <p class="price">Desde $99</p>
+  <p><button onclick="location.href='pedidos.php?pizza=Carnes Frias&v=carnesfrias123.jpg&m=99&g=129&xg=169'">Ordena aqui</button></p>
+</div>
+         </td>      
+      </tr>
+      <tr>
+        <td>
+<div class="card">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="honolulu.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Mexicana.</h2>
+      <p>Un poco de México en cada rebanada.</p>
+      <p>Ingredientes:</p>
+      <p>Chorizo,Jalapeños,Cebolla.</p>
+    </div>
+  </div>
+</div>
+  <h2>Mexicana</h2>
+  <p class="price">Desde $89</p>
+  <p><button  onclick="location.href='pedidos.php?pizza=Mexicana&v=honolulu.png&m=89&g=129&xg=169'">Ordena aqui</button></p>
+</div>
+
+        </td>
+                <td>
+<div class="card">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="mexicana.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Honolulu.</h2>
+      <p>La pizza con la perfecta combinación dulce-salado.</p>
+      <p>Ingredientes:</p>
+      <p>Jamón, Piña, Tocino y Jalapeño</p>
+    </div>
+  </div>
+</div>
+  <h2>Honolulu</h2>
+  <p class="price">Desde $89</p>
+  <p><button onclick="location.href='pedidos.php?pizza=Honolulu&v=mexicana.png&m=89&g=129&xg=169'">Ordena aqui</button></p>
+</div>
+
+        </td>
+                <td>
+<div class="card">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="vegana.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Vegana.</h2>
+      <p>¡Sólo vegetales! Nuestra opción sin carne.</p>
+      <p>Ingredientes:</p>
+      <p>Pimiento, Cebolla, Champiñones Frescos y Aceitunas</p>
+    </div>
+  </div>
+</div>
+  <h2>Pizza Vegana.</h2>
+  <p class="price">Desde $99</p>
+  <p><button onclick="location.href='pedidos.php?pizza=Vegana&v=vegana.png&m=99&g=149&xg=189'">Ordena aqui</button></p>
+</div>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>  
+
+        <br><br>
+ <table class="table">
+    <thead>
+      <tr>
+        <th><h2>Sucursales</h2></th>
+        <th><h2>Especialidades</h2></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td>
+           <a href="sucursales.html" class="rounded"> <img  src="rutamapa.jpg" width="200px" height="200px" > </a>
+       <center> <a href="sucursales.html" class="btn btn-primary active">Sucursales</a> </center>
+         </td>
+           <td>
+           <a  href="especialidades.html"  ><img src="variedad.jpg" width="200px" height="200px" class="rounded"></a>
+       <center> <a href="especialidades.html" class="btn btn-primary active">Especialidades</a> </center>
+         </td>      
+      </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Mega Pizzas 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
